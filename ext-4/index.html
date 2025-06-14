@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=close"
+    />
+    <title>Modal</title>
+  </head>
+  <body>
+    <button
+      class="bg-blue-700 text-white p-3 m-1 rounded-lg cursor-pointer"
+      id="btn"
+    >
+      Lunch A Demo Modal
+    </button>
+
+    <div
+      class="modal w-[100%] h-[100%] fixed left-0 right-0 top-0 bottom-0 bg-gray-300 flex justify-center items-start pt-8 scale-0"
+      id="modal"
+    >
+      <div
+        class="containor bg-white border inline-block p-2 w-[600px] h-[200px]"
+      >
+        <h1 class="text-3xl relative">
+          Modal Title
+          <span
+            class="material-symbols-outlined cursor-pointer absolute right-0 top-2"
+            id="closeIcon"
+          >
+            close
+          </span>
+        </h1>
+        <p class="border-b-2 border-t-2 text-xl mt-6 pt-4 pb-4">
+          Woohoo,You Are Reading this text in Modal
+        </p>
+        <div class="flex justify-end mt-3 mr-2 text-white">
+          <button
+            class="text-xl mr-2 bg-gray-500 p-2 rounded-md cursor-pointer"
+            id="closeBtn"
+          >
+            Close
+          </button>
+          <button class="text-xl bg-blue-700 p-2 rounded-md cursor-pointer">
+            Save Changes
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
